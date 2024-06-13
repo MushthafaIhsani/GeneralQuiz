@@ -1,8 +1,22 @@
+/* Keep your existing CSS styles */
+
+/* Animated background effect */
 body {
-    font-family: 'Comic Sans MS', cursive, sans-serif;
-    background-color: #ffd700;
-    margin: 0;
-    padding: 0;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab, #ffcc33, #ff6699, #6699ff, #66cc99);
+    background-size: 800% 800%;
+    animation: gradientAnimation 5s ease infinite; /* Changed from 10s to 5s for quicker transition */
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }
 
 .container {
